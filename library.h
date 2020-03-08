@@ -13,3 +13,11 @@
 #include <dirent.h>
 #include "time.h"
 #include "grp.h"
+
+
+
+//some interfile variables
+pid_t CURR_FOREGROUND;
+char * CURR_FOREGROUND_NAME;
+
+

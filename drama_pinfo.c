@@ -17,7 +17,7 @@ void drama_Pinfo(char **args, int argc){
     char relpath[1024];
      char name[3000];
       char **stat;
-      
+    // printf("%d \n", argc);
   if(argc > 1){  strcpy(pid, args[1]); }  // if we know the pid
   else { sprintf(pid, "%d", getpid());  } // else pinfo self
 
@@ -29,15 +29,14 @@ strcpy(statpath, procpath);
   strcat(statpath, "/exe");
   
  
-  int t = readlink(statpath, exepath, sizeof(exepath));
+  int t = readlink(statpath, exepath, sizeof(exepath)); //readlink : read value of a symbolic link
   
   if(t == -1) strcpy(exepath, "broken link");
   
   exepath[t] = '\0';
+  
 
-  
-  
-  if (strlen(exepath) > strlen(home) && strncmp(pwd, home, strlen(home)) == zero)
+  if (strlen(exepath) > strlen(home) && strncmp(pwd, home, strlen(home)) == zero) 
   {
     strcpy(relpath, "~"); strcat(relpath, exepath + strlen(home));
   }

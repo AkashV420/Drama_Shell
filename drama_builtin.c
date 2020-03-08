@@ -1,5 +1,6 @@
 #include "library.h"
 #include "functions.h"
+
 char home[1500];  
 char prompt[1500];
 char pwd[1500]; 
@@ -45,10 +46,10 @@ int drama_Pwd (int argc, char** args)
 }
 
 
-int drama_Execute(int argc, char **args, int flago) 
+int drama_Execute(int argc, char **args) 
 {
     int zero = 0;
-
+    // printf("inside execute %d\n", argc);
 	if (strcmp(args[0], "pwd")==zero) {
     	drama_Pwd(argc, args);
     } 
@@ -74,7 +75,7 @@ int drama_Execute(int argc, char **args, int flago)
 		printf("Abhi Nahi kiya :(\n");
 	}
 	else {
-    return drama_Proc(args, flago);
+    return drama_Proc(args);
   }
   return 1;
 }

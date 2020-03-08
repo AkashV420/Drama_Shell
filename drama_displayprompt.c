@@ -48,6 +48,7 @@ char* display()
 			strcat(str, str2);
 		}
 	}
+	
 	printf("%s", str);
 	strcpy(prompt, str);
 	return prompt;

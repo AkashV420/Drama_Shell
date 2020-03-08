@@ -87,6 +87,7 @@ int drama_Ls(int argc, char **args){ //argc : argument count
 		printf("%s: No such file or directory.. :(\n", args[cur_directory]);
 		continue;
 	}
+
 	while((name = readdir(curDir)))
 	{
       if (stat(name->d_name, &fileStat) != zero)
