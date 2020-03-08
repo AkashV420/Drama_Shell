@@ -14,13 +14,12 @@ This **README** file contains :
 
 ----------
 
-**--About The Shell--**
+## About The Shell
 An interactive user defined bash-like shell which supports semi-colon separated list of commands.It can take commands in input check if a builtin exists if exists then run the builtin else run it as separate process.
 The shell also supports input and output redirection along with piping of commands.
 
 ----------
-
-**--Running the program--**
+## Running the program 
 - make
 - ./drama
 
@@ -70,11 +69,5 @@ mkdir|Creates a new directory|-p|1 or 2
 * drama_redirection : do redirection.
 * drama_argumentize : count the args passed.
 _______________
-
-
-**--To Exit the command :--**
-	1.quit 
-	 OR
-	2.exit
 
 ## Akash Verma
